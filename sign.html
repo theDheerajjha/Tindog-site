@@ -3,24 +3,37 @@
   <head>
     <meta charset="utf-8" />
     <title>Sign-up</title>
+
+ <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
     <style>
+      body{
+        font-family: "ubuntu";
+        font-weight:500;
+
+        background-color: #ff4c67e3;
+      }
+      
+      
       input[type="text"],
       select,
       textarea {
         width: 100%;
         padding: 12px;
-        border: 1px solid #ccc;
+        border: 1px solid rgb(157, 243, 200);
+       
         border-radius: 4px;
         box-sizing: border-box;
-        margin-top: 1%;
-        margin-bottom: 1%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        text-align: center;
         resize: vertical;
       }
      
 
       /* submit button style */
       input[type="submit"] {
-        background-color: #09619c;
+        background-color: #50c28d;
         color: white;
         padding: 12px 20px;
         border: none;
@@ -31,19 +44,25 @@
 
       /* mouse hover */
       input[type="submit"]:hover {
-        background-color: #4151dfe1;
+        background-color: #2ab5bee1;
       }
 
       .container {
-        color: #fff;
-        margin: 15%;
-        border-radius: 10px;
-        background-color: rgba(67, 219, 181, 0.904);
+
+        color: rgba(17, 78, 59, 0.534);
+        margin: 30%;
+        border: 2px solid #44c98bc9;
+        border-radius: 12px;
+        /* box-shadow: 2px 2px rgb(165, 224, 210); */
+        /* background-color: rgba(67, 219, 181, 0.904); */
+        background-color:transparent;
         padding: 20px;
+      
       }
     </style>
   </head>
   <body>
+    <div class="main-div" >
     <div id="box" class="container">
       <form action="">
         <label for="fname">First Name</label>
@@ -64,7 +83,7 @@
 
         <label for="country">Country</label>
         <select id="country" name="country">
-          <option value="australia">India</option>
+          <option value="India">India</option>
           <option value="canada">Canada</option>
           <option value="usa">USA</option>
         </select>
@@ -79,6 +98,7 @@
 
         <input type="submit" value="Submit" />
       </form>
+    </div>
     </div>
   </body>
 </html>
